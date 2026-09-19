@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darshan Chaluvaraju - Resume</title>
+  <style>
+    /* ATS-Optimized Minimalist CSS */
+    /* No complex grids, no flexbox for core layout, standard fonts, pure semantic HTML */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.4;
+      color: #000000;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background: #ffffff;
+    }
+    
+    h1 {
+      font-size: 24pt;
+      margin-bottom: 0.2rem;
+      text-align: center;
+    }
+    
+    .contact-info {
+      text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 11pt;
+    }
+    
+    .contact-info a {
+      color: #000000;
+      text-decoration: none;
+    }
+    
+    h2 {
+      font-size: 14pt;
+      text-transform: uppercase;
+      border-bottom: 1px solid #000000;
+      padding-bottom: 0.2rem;
+      margin-top: 1.5rem;
+      margin-bottom: 0.8rem;
+    }
+    
+    h3 {
+      font-size: 12pt;
+      margin: 1rem 0 0.2rem 0;
+    }
+    
+    .job-header {
+      display: table;
+      width: 100%;
+      margin-bottom: 0.2rem;
+    }
+    
+    .job-title-company {
+      display: table-cell;
+      text-align: left;
+      font-weight: bold;
+    }
+    
+    .job-date {
+      display: table-cell;
+      text-align: right;
+      font-weight: bold;
+    }
+    
+    p {
+      margin: 0.5rem 0;
+      font-size: 11pt;
+    }
+    
+    ul {
+      margin: 0.5rem 0 1rem 1.5rem;
+      padding: 0;
+    }
+    
+    li {
+      margin-bottom: 0.3rem;
+      font-size: 11pt;
+    }
+    
+    .skills-list {
+      list-style-type: none;
+      margin-left: 0;
+    }
+    
+    .skills-list li {
+      margin-bottom: 0.4rem;
+    }
+
+    /* Print Specifics */
+    @media print {
+      body {
+        padding: 0;
+        margin: 0;
+        max-width: 100%;
+      }
+      @page {
+        margin: 0.75in;
+      }
+      .no-print {
+        display: none !important;
+      }
+    }
+
+    /* Web Preview Toolbar */
+    .toolbar {
+      background: #f1f5f9;
+      padding: 1rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      border-radius: 8px;
+      border: 1px solid #cbd5e1;
+    }
+    .toolbar button {
+      background: #0f172a;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1.5rem;
+      font-size: 11pt;
+      border-radius: 4px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .toolbar button:hover {
+      background: #334155;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="toolbar no-print">
+    <p style="margin-top: 0;">This page is a stripped-down, ATS-friendly plain HTML resume format designed to parse perfectly into recruitment systems.</p>
+    <button onclick="window.print()">Print / Save as PDF</button>
+  </div>
+
+  <h1>Darshan Chaluvaraju</h1>
+  <div class="contact-info">
+    Crawley, United Kingdom | darshan.chaluvaraju@gmail.com | +44 7466032908<br>
+    linkedin.com/in/darshan-chaluvaraju-55803373
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p>
+    An engineering leader with 13+ years of experience bridging Development, Operations, Enterprise DevOps, and Software Security & Compliance (SSDLC). Proven track record of architecting massive security transformations and actively pioneering AI-assisted workflow automation. Specialized in building robust internal platforms that secure code and intelligently augment developers using LLMs, Model Context Protocol (MCP), and Agentic AI.
+  </p>
+
+  <h2>Technical Skills</h2>
+  <ul class="skills-list">
+    <li><strong>DevSecOps & Security:</strong> SSDLC Architecture, SAST/DAST, Secret Detection, AI Vulnerability Triage, Secure Coding Policy, ScanOSS, OSS Review Toolkit (ORT), Nexus Repository Pro, Docker Hardened Images.</li>
+    <li><strong>CI/CD & Platforms:</strong> GitLab EE/Ultimate, GitLab CI/CD, GitLab Geo (Resilient SCM), SonarQube, Jenkins, GitOps, Bitbucket.</li>
+    <li><strong>AI & Agentic Ops:</strong> Model Context Protocol (MCP), HolmesGPT, k8sgpt, GitLab/Zabbix MCPs, Hybrid AI Models, AI Skill Writing, Autonomous Workflows.</li>
+    <li><strong>Containers & Cloud:</strong> Kubernetes, Docker, Helm Charts, OpenShift, Air-Gapped Environments, Internal Registries, Azure, AWS.</li>
+    <li><strong>IaC & Automation:</strong> Python, Bash/Shell, Ansible, Terraform, Linux/Unix SysAdmin.</li>
+  </ul>
+
+  <h2>Professional Experience</h2>
+
+  <div class="job-header">
+    <div class="job-title-company">Viridien (formerly CGG) | Senior DevOps / DevSecOps Engineer</div>
+    <div class="job-date">Feb 2023 - Present</div>
+  </div>
+  <p><em>Crawley, UK</em></p>
+  <ul>
+    <li>Led the introduction of SonarQube from PoC to enterprise rollout, scanning ~800K lines of code across 250+ projects.</li>
+    <li>Conceptualized and built an internal Platform-as-a-Service enforcing central governance, GitLab Geo resilience, third-party ingress control, and central SBOMs. Negotiated and secured a 3-year GitLab-EE contract.</li>
+    <li>Refined the organizational Secure Coding Policy and integrated ScanOSS for IT infringement protection.</li>
+    <li>Created integrations to feed codebase visibility data into internal AI models, automatically triaging vulnerabilities and generating MRs for developer review.</li>
+    <li>Currently modernizing Kubernetes and IT ops using HolmesGPT and k8sgpt. Writing custom MCP servers (Zabbix, Atlassian, GitLab) to allow AI agents to chat with and remediate infrastructure securely.</li>
+  </ul>
+
+  <div class="job-header">
+    <div class="job-title-company">Amadeus Software Labs | Software Development Engineer III - DevOps</div>
+    <div class="job-date">Jan 2022 - Jan 2023</div>
+  </div>
+  <p><em>Bengaluru, India</em></p>
+  <ul>
+    <li>Continued a nearly 5-year Amadeus DevOps engagement after direct conversion, driving platform reliability and developer enablement for high-scale global travel systems.</li>
+    <li>Conducted cloud-migration proof-of-concept (PoC) activities using Docker, Kubernetes, OpenShift, Helm, Jenkins, and Bitbucket.</li>
+    <li>Resolved complex build, deployment, and environment bottlenecks, ensuring reliable 24/7 engineering workflows.</li>
+  </ul>
+
+  <div class="job-header">
+    <div class="job-title-company">Alten Calsoft Labs (Deployed at Amadeus) | Module Leader - DevOps</div>
+    <div class="job-date">Mar 2018 - Jan 2022</div>
+  </div>
+  <p><em>Bengaluru, India</em></p>
+  <ul>
+    <li>Led CI/CD deployment automation and migrated critical components to the Software Workbench internal framework based on Jenkins and Docker.</li>
+    <li>Created robust Jenkinsfiles and dynamic Docker build agents, drastically improving repeatability and build portability.</li>
+    <li>Automated bulk Bitbucket pull requests and routine engineering tasks with custom Python scripts.</li>
+    <li>Engineered cross-site package replication between Nice (France) and Bengaluru engineering hubs.</li>
+    <li>Conducted technical workshops and mentored engineering peers in Jenkins, Ansible, and container tooling.</li>
+  </ul>
+
+  <div class="job-header">
+    <div class="job-title-company">Exilant Technologies Pvt Ltd (Client: Apple) | Programmer Analyst - DevOps</div>
+    <div class="job-date">Jul 2016 - Mar 2018</div>
+  </div>
+  <p><em>Bengaluru, India</em></p>
+  <ul>
+    <li>Enabled streamlined application onboarding and automated builds across multi-tier environments using Jenkins, Ansible, Git, Maven, and MinIO.</li>
+    <li>Authored Ansible playbooks, Shell, and Python scripts for server configuration management and bulk job updates.</li>
+    <li>Delivered key proof-of-concepts covering Chef, Ansible with Docker, and AppDynamics monitoring for VM-hosted application clusters.</li>
+  </ul>
+
+  <div class="job-header">
+    <div class="job-title-company">Infosys Ltd (Client: Apple) | Senior Systems Engineer</div>
+    <div class="job-date">Mar 2013 - Jul 2016</div>
+  </div>
+  <p><em>Mysore & Mangalore, India</em></p>
+  <ul>
+    <li>Maintained and enhanced mission-critical Apple applications across a 3+ year engagement with code-level debugging, configuration, and incident triage.</li>
+    <li>Automated recurring operations with Unix Shell and Python scripts for batch job scheduling and reporting.</li>
+    <li>Collaborated with business users, system architects, and vendors to ensure strict SLA adherence and high availability.</li>
+  </ul>
+
+  <h2>Certifications & Education</h2>
+  <ul>
+    <li><strong>Agents to Agents (A2A) Protocol</strong> - DeepLearning.AI</li>
+    <li><strong>Microsoft Certified: Azure AI Engineer Associate</strong> - Microsoft</li>
+    <li><strong>Quantum Computing & Machine Learning</strong> - IIT Delhi</li>
+    <li><strong>Fundamentals of AI Agents</strong> - Hugging Face</li>
+    <li><strong>Microsoft Azure AI Fundamentals & Azure Fundamentals</strong> - Microsoft</li>
+    <li><strong>Microsoft OpenHack: DevOps Challenge</strong> - Microsoft</li>
+    <li><strong>CKA & CKS (In Preparation - Target: Dec 2026)</strong> - CNCF</li>
+    <li><strong>Bachelor of Engineering (B.E.) in Computer Science & Engineering</strong> - Global Academy of Technology, VTU, Bengaluru</li>
+  </ul>
+
+  <script>
+    // Auto-trigger print dialog when opened, after a short delay to ensure fonts load
+    window.onload = function() {
+      setTimeout(function() {
+        window.print();
+      }, 500);
+    };
+  </script>
+</body>
+</html>
